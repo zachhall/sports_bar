@@ -72,3 +72,5 @@ class HotwingsController < ApplicationController
       params.require(:hotwing).permit(:sauce, :heat_index)
     end
 end
+  def welcome
+    end
