@@ -1,0 +1,2 @@
+module HotwingsHelper
+end

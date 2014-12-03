@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sauce:</strong>
+  <%= @hotwing.sauce %>
+</p>
+
+<p>
+  <strong>Heat index:</strong>
+  <%= @hotwing.heat_index %>
+</p>
+
+<%= link_to 'Edit', edit_hotwing_path(@hotwing) %> |
+<%= link_to 'Back', hotwings_path %>

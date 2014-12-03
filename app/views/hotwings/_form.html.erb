@@ -1,0 +1,25 @@
+<%= form_for(@hotwing) do |f| %>
+  <% if @hotwing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hotwing.errors.count, "error") %> prohibited this hotwing from being saved:</h2>
+
+      <ul>
+      <% @hotwing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sauce %><br>
+    <%= f.text_field :sauce %>
+  </div>
+  <div class="field">
+    <%= f.label :heat_index %><br>
+    <%= f.number_field :heat_index %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
